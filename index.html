@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Título da página, que aparecerá na aba do navegador -->
+    <title> Meus Jogos Favoritos </title>
+    
+    <!-- Link para o arquivo de estilo CSS externo que será utilizado para estilizar a página -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+        <!-- Cabeçalho da página -->
+        <header>
+            <!-- Título principal da página -->
+            <h1> Meus Jogos Favoritos </h1>
+        </header>
+        
+        <!-- Conteúdo principal da página -->
+        <main>
+            <!-- Seção para buscar os jogos -->
+            <section>
+                <!-- Campo de entrada de texto onde o usuário pode digitar o nome do jogo -->
+                <input type="text" placeholder="Digite aqui o que deseja pesquisar" id="campo-pesquisa">
+                
+                <!-- Botão que, ao ser clicado, chama a função JavaScript "pesquisar" -->
+                <button onclick="pesquisar()"> Buscar </button>
+            </section>
+
+            <!-- Seção onde os resultados da pesquisa serão exibidos, com um ID para que possa ser manipulada via JavaScript -->
+            <section class="resultados-pesquisa" id="resultados-pesquisa">
+            </section>
+        </main>
+        
+        <!-- Rodapé da página com informações sobre direitos autorais e contato -->
+        <footer>
+            <p>2024 - Meus Jogos Favoritos. Todos os direitos reservados.</p>
+            <p>Entre em contato pelo email: xxxxx@xxxx.com.br</p>
+        </footer>
+
+        <!-- Importação de um arquivo JavaScript que contém os dados dos jogos -->
+        <script src="dados.js">
+        </script>
+
+        <!-- Importação de outro arquivo JavaScript que contém a lógica da aplicação -->
+        <script src="app.js">
+        </script>
+</body>
+</html>
